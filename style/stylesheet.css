@@ -22,3 +22,15 @@
   background-color: black;
   color: white;
 }
+
+table, th, td {
+  border:1px solid black;
+}
+
+body {
+  font-family: "PT Serif", serif;
+}
+
+h1 {
+  font-family: "Ultra", serif;
+}
