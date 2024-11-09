@@ -1,3 +1,22 @@
+
+document.addEventListener("DOMContentLoaded", function() {
+    const contentDiv = document.getElementById("content");
+    const tabs = document.querySelectorAll(".tab");
+    
+    tabs.forEach(start => {
+        if (start.classList.contains("active")) {
+            const page = start.dataset.target;
+            fetch(page)
+            .then(load => load.text())
+            .then(data => {
+                contentDiv.innerHTML = data;
+            });
+        }
+    });
+});
+
+
+
 document.addEventListener("DOMContentLoaded", function(){
     const tabs = document.querySelectorAll(".tab")
     const contentDiv = document.getElementById("content")
@@ -31,6 +50,6 @@ document.addEventListener("DOMContentLoaded", function(){
     });
 });
 
-// fix "for each"
-// upload onto main 'fork'
-// make kotlin content load when fist opening
+// upload and fill in table
+// add description for projects
+// some screenshots
