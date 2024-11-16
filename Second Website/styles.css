@@ -1,0 +1,301 @@
+body {
+  background-color: #FFE4C4;
+  font-family: "Comic Sans MS", sans-serif;
+  color: black;
+}
+
+h1 {
+  font-family: "Georgia";
+  color: Blue;
+}
+ol{
+  color: DarkBlue;
+}
+nav ul {
+  background-color: goldenrod;
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 10px;
+  margin-left: 20px; 
+
+}
+
+.layoutGrid {
+  grid-row-gap: 1em;
+  display: grid;
+  grid-column-gap: 1em;
+  grid-template-rows: auto;
+
+  grid-template-areas: 
+    "mnbvcxz"
+    "mnbvcxz"
+    "mnbvcx"
+    "mnbvc";
+}
+
+
+.articleGrid {
+  grid-area: mnbvcxz;
+}
+
+.asideGrid1{
+  grid-area: mnbvcx;
+}
+
+.asideGrid2{
+  grid-area: mnbvc;
+}
+
+.topDivider {
+  border-top-style: dashed;
+  border-top-color: crimson;
+  border-top-width: 10px;
+  padding-top: 10px;
+}
+
+.randomBox {
+  border-style: groove;
+  border-color: mediumaquamarine;
+  border-width: 20px;
+  border-radius: 10px;
+  background-color: purple;
+
+}
+
+#stylishText {
+  font-family: cursive;
+  font-size: 45px;
+  color: darkorange;
+}
+
+#mainpage {
+  background: olive;
+  background: linear-gradient(#535F14, olive, oldlace, olivedrab, orange, orangered, orchid, goldenrod, gold, lightblue, black);
+/*  background-size: 600vw 600vw;*/
+  animation: why 100s infinite linear forwards;*/
+
+
+
+
+th, td {
+  background-color: orange;
+}
+
+
+
+#imageadjustable {
+  width: 50%;
+  border-radius: 10%;
+  animation-name: resize;
+  animation-duration: 10s;
+  animation-iteration-count: 1;
+}
+
+@keyframes resize {
+  from{
+    width: 50px;
+  }
+  to {
+    width: 100px;
+  }
+}
+
+@keyframes rain {
+  0% {
+    color: orangered;
+  }
+  50% {
+    color: yellow;
+  }
+  100% {
+    color: purple;
+  }
+}
+
+@keyframes why {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 600vw;
+  }
+}
+
+#wfw {
+  animation-name: rain;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+img {
+  border: 10px double orchid;
+}
+
+img:hover {
+  border: 10px double firebrick;
+}
+
+.wfw:hover {
+  color: white;
+}
+
+nav .wfw:hover {
+  color: white;
+}
+
+@keyframes rollOver {
+  0% {
+    transform: translate(1000000x, 600px);
+    }
+  100%{
+    transform: rotate(-360deg);
+    }
+}
+
+#lkh:hover {
+  animation-name: rollOver;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+.ca {
+  border: 10px double coral;
+  padding: 20px;
+  font-family: "Comic Sans MS";
+}
+
+.picture {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  border: 400px darkred;
+}
+
+.ca:hover {
+  border-color: darkred;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.cardcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+
+@media all and (min-width: 1000px) {
+  nav ul {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+.layoutGrid {
+  grid-row-gap: 1em;
+  grid-column-gap: 1em;
+  grid-template-columns: 2fr 1fr;
+
+  grid-template-areas: 
+    "mnbvcxz mnbvcx"
+    "mnbvcxz mnbvc";
+
+
+}
+
+}
+
+#fridge {
+  left: 50px;
+  top: 250px;
+}
+
+#fridge2 {
+  right: 123px;
+  top: 200px;
+}
+
+#ok {
+  right: 50px;
+}
+
+#homeRecipe {
+  top: 100px;
+  right: 250px;
+
+}
+
+.lightBox {
+  background: rgb(0, 0, 0, 0.5);
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  z-index: 987;
+}
+
+.lightBox:target {
+  visibility: visible;
+}
+
+.relPos {
+  position: relative;
+
+}
+
+.absPos {
+  position: absolute;
+}
+
+
+
+#photoBox {
+  height: 400px;
+  width: 800px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/**********************************
+This section is for styling tables
+***********************************/
+table, th, td {
+  border: 1px solid HoneyDew;
+  border-collapse: collapse;
+}
+tr {
+  background-color: PaleTurquoise;
+}
+th, td {
+  vertical-align: top;
+  padding: 5px;
+  text-align: left;
+}
+th {
+  color: purple;
+}
+td {
+  color: purple;
+}
+}

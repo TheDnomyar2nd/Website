@@ -34,3 +34,33 @@ body {
 h1 {
   font-family: "Ultra", serif;
 }
+
+.overlay {
+  background-color: yellow;
+  position: absolute;
+  top: 0;
+  transition: 0.9s ease;
+  opacity: 0;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.htmlProjectImage {
+  display: block;
+}
+
+.container {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+
+/* center text add another image with link */
