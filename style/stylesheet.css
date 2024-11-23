@@ -62,5 +62,11 @@ h1 {
   opacity: 1;
 }
 
+.unityContent {
+ display: flex;
+ gap: 80px;
+ padding-top: 50px;
+}
 
-/* center text add another image with link */
+/* make a link for the image
+ */
