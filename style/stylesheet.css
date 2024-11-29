@@ -46,27 +46,55 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 20px;
 }
 
 .htmlProjectImage {
   display: block;
+  border-radius: 20px;
+
 }
 
 .container {
   position: relative;
   width: fit-content;
   height: fit-content;
+  border-radius: 20px;
+}
+
+.container:hover {
+  cursor: url("data:image/svg+xml;utf8, <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' style='font-size: 24px'><text y='20'>🐂</text></svg>"), auto;
+
 }
 
 .container:hover .overlay {
   opacity: 1;
 }
 
-.unityContent {
+.LuaContent {
  display: flex;
  gap: 80px;
  padding-top: 50px;
 }
 
+.horizontalContainer {
+  flex-direction: row;
+  display: flex;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.overlay:hover {
+  cursor: url("data:image/svg+xml;utf8, <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' style='font-size: 24px'><text y='20'>🐆</text></svg>"), auto;
+
+}
+
+html {
+  cursor: url("data:image/svg+xml;utf8, <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' style='font-size: 24px'><text y='20'>👺</text></svg>"), auto;
+}
+
+#donkey:hover {
+  cursor: url("data:image/svg+xml;utf8, <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' style='font-size: 24px'><text y='20'>🐂</text></svg>"), auto;
+}
 /* make a link for the image
  */
