@@ -96,5 +96,25 @@ html {
 #donkey:hover {
   cursor: url("data:image/svg+xml;utf8, <svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' style='font-size: 24px'><text y='20'>🐂</text></svg>"), auto;
 }
-/* make a link for the image
- */
+
+.tabletWebite {
+  border: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.tablet {
+  height: 512px;
+  width: 533px;
+}
+
+.tabletFrame{
+  border-style: solid;
+  border-radius: 20px;
+  border-color: black;
+  border-width: 90px;
+}
+
+
+/* add description */
+/* duplicate for other site */
