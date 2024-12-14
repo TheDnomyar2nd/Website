@@ -53,3 +53,27 @@ document.addEventListener("DOMContentLoaded", function(){
 // upload and fill in table
 // add description for projects
 // some screenshots
+
+
+
+function checkup(form) {
+    var username = form.username.value
+    console.log(username)
+    var password = form.password.value
+    
+    if (password == 12345) {
+        console.log(12345)
+        window.close()
+    }
+    else if (username == "string" , password == 123456789) {
+        alert("ihwogohigig")
+    }
+}
+
+
+
+// hmw check for password and username print something for now
+// https://studio.code.org/s/web-development-2024 section 2         7, 8, 9, 
+
+
+// if ()  {}
